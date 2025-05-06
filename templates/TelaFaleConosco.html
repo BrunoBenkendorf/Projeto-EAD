@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fale Conosco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../statics/faleconosco.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <script src="../statics/js/configglobal.js"></script>
+  <div class="form-container">
+    <h2>Fale Conosco</h2>
+    <form action="#" method="post">
+      <label for="para">Para:</label>
+      <select id="para" name="para">
+        <option>Academico</option>
+        <option>Atendimento Técnico</option>
+        <option>Financeiro</option>
+      </select>
+
+      <label for="nome">Seu Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Seu E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" name="assunto" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+    </form>
+    <div class="text-center space-x-4 pt-4">
+      <a href="../templates/TelaHome.html" class="btn btn-white btn-animated">Voltar</a>
+      <a href="#" class="btn btn-white btn-animated">Enviar</a>
+    </div>
+  </div>
+
+</body>
+
+</html>

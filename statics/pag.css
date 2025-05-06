@@ -1,0 +1,78 @@
+
+body {
+  background: linear-gradient(to bottom, #fdf5ad, #fab663, #ff8f2d, #fae20e);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.pagamento-container {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.pagamento-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.opcao {
+  display: flex;
+  align-items: center;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.opcao input {
+  margin-right: 12px;
+}
+
+.opcao i {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.opcao span {
+  font-weight: 500;
+}
+
+.detalhes {
+  margin-left: 40px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fffbe6;
+  border-left: 3px solid orange;
+  display: none;
+}
+#btn {
+  background-color: #333;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none; /* Adiciona para remover a borda padrão */
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 16px; /* Tamanho da fonte para melhor legibilidade */
+  cursor: pointer; /* Mostra o ponteiro ao passar o mouse */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  width: 100%; /* Faz o botão ocupar toda a largura disponível */
+  text-align: center;
+  margin-top: 20px; /* Espaço acima do botão */
+}
+
+#btn:hover {
+  background-color: #555; /* Tom mais claro ao passar o mouse */
+  transform: translateY(-2px); /* Efeito sutil de elevação */
+}
