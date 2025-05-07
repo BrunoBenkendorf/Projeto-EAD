@@ -7,7 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a{
+  text-decoration: none;
+}
 /* Corpo */
 body {
   font-family: Arial, sans-serif;
@@ -118,17 +120,17 @@ h1 {
 }
 
 /* Ícones do menu */
-header ul {
+ul {
   list-style-type: none;
   display: flex;
   gap: 25px;
 }
 
-header ul li {
+ul li {
   font-size: 27px;
 }
 
-header ul li a {
+ul li a {
   color: black;
   text-decoration: none;
 }

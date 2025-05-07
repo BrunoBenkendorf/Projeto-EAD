@@ -190,5 +190,5 @@ a{
 /* Fundo */
 .banner {
     margin: 0;
-    background: linear-gradient(#fdf5ad, #fab663, #ff8f2d, #fae20e);
+    background: linear-gradient(#fdf5ad, #fab663, #ff8f2d, #fae20e)fixed;
 }
