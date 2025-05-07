@@ -13,14 +13,16 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(#fdf5ad, #fab663, #ff8f2d, #fae20e)fixed;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
 /* Conteúdo principal */
 .main-content {
   text-align: center;
-  padding: 140px 20px 20px 20px; /* padding-top aumentado por causa do header fixo */
+  padding: 140px 20px 20px 20px;
+  /* padding-top aumentado por causa do header fixo */
 }
 
 .course-section {
@@ -81,4 +83,3 @@ a{
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-

@@ -7,30 +7,35 @@
   padding: 0;
   box-sizing: border-box;
 }
-a{
+
+a {
   text-decoration: none;
 }
+
 /* Corpo */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #fdf5ad, #fab663, #ff8f2d, #fae20e);
 }
-.fundo{
+
+.fundo {
   background-color: white;
   width: 500px;
   padding: 50px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-img{
+
+img {
   width: 100%;
   max-width: 100%;
   padding: 0;
   border-radius: 12px;
 }
+
 /* Cabeçalho */
 header {
   width: 100%;
@@ -91,7 +96,7 @@ h1 {
   transition: 0.5s;
 }
 
-.pesquisa-container:hover > .pesquisa-txt {
+.pesquisa-container:hover>.pesquisa-txt {
   width: 500px;
   padding: 0 6px;
 }
@@ -157,7 +162,7 @@ header ul li a {
   margin-top: 10px;
   background-color: white;
   min-width: 140px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   overflow: hidden;
   z-index: 1000;
@@ -190,7 +195,8 @@ header ul li a {
 
 .principal {
   text-align: center;
-  padding: 140px 20px 20px 20px; /* padding-top aumentado por causa do header fixo */
+  padding: 140px 20px 20px 20px;
+  /* padding-top aumentado por causa do header fixo */
 }
 
 .sessao-curso {
@@ -251,4 +257,3 @@ header ul li a {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-

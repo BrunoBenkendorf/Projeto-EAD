@@ -1,56 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <title>Configurações - BataTECH</title>
   <link rel="stylesheet" href="../statics/site.css">
-  <style>
-    .config-container {
-      margin: 150px auto;
-      max-width: 600px;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      font-family: 'Rajdhani', sans-serif;
-    }
-
-    .config-container h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #ff8f2d;
-    }
-
-    .config-item {
-      margin: 20px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .config-item label {
-      font-weight: bold;
-      color: #333;
-    }
-
-    .config-container button {
-      margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #000;
-      color: #ff8f2d;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    .config-container button:hover {
-      background-color: #333;
-    }
-  </style>
+  <link rel="stylesheet" href="../statics/config.css">
 </head>
+
 <body class="banner">
-    <script src="../statics/configglobal.js"></script>
+  <script src="../statics/configglobal.js"></script>
 
   <div class="config-container">
     <h2>Configurações da Plataforma</h2>
@@ -109,61 +68,7 @@
     <a href="../templates/TelaHome.html"><button onclick="salvarConfiguracoes()">Salvar configurações</button></a>
   </div>
 
-  <script>
-    const temaEscuro = document.getElementById('temaEscuro');
-    const notificacoes = document.getElementById('notificacoes');
-    const volume = document.getElementById('volume');
-    const volumeValue = document.getElementById('volumeValue');
-    const velocidade = document.getElementById('velocidade');
-    const idioma = document.getElementById('idioma');
-    const notificacaoTipo = document.getElementById('notificacaoTipo');
-    const legendaAtiva = document.getElementById('legendaAtiva');
-
-    function aplicarTema(escuro) {
-      document.body.style.background = escuro
-        ? 'linear-gradient(#1a1a1a, #333)'
-        : 'linear-gradient(#fdf5ad, #fab663, #ff8f2d, #fae20e)';
-    }
-
-    volume.addEventListener('input', () => {
-      volumeValue.textContent = volume.value;
-    });
-
-    temaEscuro.addEventListener('change', () => {
-      aplicarTema(temaEscuro.checked);
-    });
-
-    function salvarConfiguracoes() {
-      const config = {
-        temaEscuro: temaEscuro.checked,
-        notificacoes: notificacoes.checked,
-        volume: volume.value,
-        velocidadeVideo: velocidade.value,
-        idioma: idioma.value,
-        notificacaoTipo: notificacaoTipo.value,
-        legendaAtiva: legendaAtiva.checked
-      };
-      localStorage.setItem('bataTechConfig', JSON.stringify(config));
-      alert('Configurações salvas!');
-    }
-
-    function carregarConfiguracoes() {
-      const configSalva = localStorage.getItem('bataTechConfig');
-      if (configSalva) {
-        const config = JSON.parse(configSalva);
-        temaEscuro.checked = config.temaEscuro;
-        notificacoes.checked = config.notificacoes;
-        volume.value = config.volume;
-        volumeValue.textContent = config.volume;
-        velocidade.value = config.velocidadeVideo;
-        idioma.value = config.idioma;
-        notificacaoTipo.value = config.notificacaoTipo;
-        legendaAtiva.checked = config.legendaAtiva;
-        aplicarTema(config.temaEscuro);
-      }
-    }
-
-    carregarConfiguracoes();
-  </script>
+  <script src="../statics/js/config.js"></script>
 </body>
+
 </html>

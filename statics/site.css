@@ -10,10 +10,14 @@
 
 /* Deixa em fullscreen */
 body {
-    height: 100%; /* Altura da página a 100% do viewport */
-    width: 100%; /* Largura da página a 100% do viewport */
-    margin: 0; /* Zera as margens do body */
-    padding: 0; /* Zera o preenchimento do body */
+    height: 100%;
+    /* Altura da página a 100% do viewport */
+    width: 100%;
+    /* Largura da página a 100% do viewport */
+    margin: 0;
+    /* Zera as margens do body */
+    padding: 0;
+    /* Zera o preenchimento do body */
 }
 
 html {
@@ -21,9 +25,10 @@ html {
     max-height: 275vh;
 }
 
-a{
-        text-decoration: none;
+a {
+    text-decoration: none;
 }
+
 /* Botões */
 .btn-login button,
 .btn-cadastrar button {
@@ -49,8 +54,10 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto; /* ocupa toda a altura da tela */
-    padding-top: 5px; /* se quiser afastar do header fixo */
+    height: auto;
+    /* ocupa toda a altura da tela */
+    padding-top: 5px;
+    /* se quiser afastar do header fixo */
     box-sizing: border-box;
 }
 
@@ -68,7 +75,7 @@ a{
     width: 250px;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -124,7 +131,7 @@ a{
     width: 250px;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -155,7 +162,7 @@ a{
 }
 
 /* Imagem de apoio */
-.container-apoio{
+.container-apoio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +171,7 @@ a{
     box-sizing: border-box;
 }
 
-.info-apoios{
+.info-apoios {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -173,17 +180,17 @@ a{
     padding: 20px;
 }
 
-.info-apoio img{
+.info-apoio img {
     height: 600px;
     width: 1000px;
 }
 
-.info-apoio{
+.info-apoio {
     background-color: white;
     width: 1800px;
     padding: 80px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 

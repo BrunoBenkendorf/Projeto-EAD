@@ -1,8 +1,6 @@
-
-
 .text-box {
   margin-left: 44vw;
- margin-top: 42vh;
+  margin-top: 42vh;
 }
 
 .btn:link,
@@ -60,12 +58,12 @@
 
 @keyframes moveInBottom {
   0% {
-      opacity: 0;
-      transform: translateY(30px);
+    opacity: 0;
+    transform: translateY(30px);
   }
 
   100% {
-      opacity: 1;
-      transform: translateY(0px);
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
